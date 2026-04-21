@@ -1,0 +1,24 @@
+
+body {
+    background-color: #F2F2F2;
+}
+
+.socialCard {
+    background-color: white;
+}
+
+.socialCard button {
+    border-color: #333333;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.socialCard sub {
+    color: #333333;
+}
+
+.socialCard button:hover {
+    border-color: #333333;
+    background-color: #333333;
+    color: #ffffff;
+}

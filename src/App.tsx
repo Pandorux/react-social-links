@@ -7,8 +7,9 @@ function App() {
       <div>
         <SocialCard
           name="Linus Torvalds"
+          desc="Creator of Linux"
           location="Helsinki, Finland"
-          children={["Test", "Test2", "Test3"]}
+          children={["Github", "LinkedIn", "Twitter", "Instagram"]}
         ></SocialCard>
       </div>
     </div>
