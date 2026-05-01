@@ -1,9 +1,27 @@
 
 body {
+    background-color: #141414;
+    color: white;
+}
+
+sub {
+    color: #b4d44f;
+}
+
+.light {
     background-color: #F2F2F2;
 }
 
+.light h2, .light p, .light sub {
+    color: #333333;
+}
+
 .socialCard {
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+}
+
+.light .socialCard {
     background-color: white;
 }
 
@@ -11,10 +29,6 @@ body {
     border-color: #333333;
     background-color: #333333;
     color: #ffffff;
-}
-
-.socialCard sub {
-    color: #333333;
 }
 
 .socialCard button:hover {
