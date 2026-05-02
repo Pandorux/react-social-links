@@ -1,4 +1,5 @@
 import React from "react";
+import { PropsWithChildren } from "react";
 import SocialLinkButton from "./SocialLinkButton";
 import headshot from "../assets/Placeholder-headshot.png";
 
@@ -9,7 +10,18 @@ interface Props {
   children: string[];
 }
 
-function SocialCard({ name, desc, location, children }: Props) {
+interface Test {
+  name: string;
+  desc?: string;
+  location: string;
+}
+
+const SocialCard: React.FC<PropsWithChildren<Test>> = ({
+  name,
+  desc,
+  location,
+  children,
+}) => {
   return (
     <>
       <div
@@ -38,21 +50,11 @@ function SocialCard({ name, desc, location, children }: Props) {
         </div>
 
         <div className="col m-2" id="socialLinks">
-          {children.map((child, index) => (
-            <div className="row p-2" key={index}>
-              {
-                <SocialLinkButton
-                  text={child}
-                  link="www.google.com"
-                  color="primary"
-                ></SocialLinkButton>
-              }
-            </div>
-          ))}
+          {children}
         </div>
       </div>
     </>
   );
-}
+};
 
 export default SocialCard;
