@@ -1,38 +1,45 @@
 
+:root {
+    --background-color: #141414;
+    --forground-color: #1f1f1f;
+    --btn-color: #333333;
+    --text-color: #ffffff;
+}
+
 body {
-    background-color: #141414;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 sub {
     color: #b4d44f;
 }
 
-.light {
+[data-theme="light"] {
     background-color: #F2F2F2;
 }
 
-.light h2, .light p, .light sub {
+[data-theme="light"] h2, [data-theme="light"] p, [data-theme="light"] sub {
     color: #333333;
 }
 
 .socialCard {
-    background-color: #1f1f1f;
-    border-color: #1f1f1f;
+    background-color: var(--forground-color);
+    border-color: var(--forground-color);
 }
 
-.light .socialCard {
+[data-theme="light"] .socialCard {
     background-color: white;
 }
 
 .socialCard button {
-    border-color: #333333;
-    background-color: #333333;
-    color: #ffffff;
+    border-color: var(--btn-color);
+    background-color: var(--btn-color);
+    color: var(--text-color);
 }
 
 .socialCard button:hover, .socialCard button:active {
-    border-color: #333333 !important; 
-    background-color: #333333 !important;
-    color: #ffffff !important;
+    border-color: var(--btn-color) !important; 
+    background-color: var(--btn-color) !important;
+    color: var(--text-color) !important;
 }
